@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genuary2025 - Animated Lines</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #222;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            position: relative;
+            width: 80%;
+            height: 80%;
+        }
+
+        .vertical-line,
+        .horizontal-line {
+            position: absolute;
+        }
+
+        .vertical-line {
+            height: 100%;
+            animation: slideY 10s infinite alternate ease-in-out;
+        }
+
+        .horizontal-line {
+            width: 100%;
+            animation: slideX 10s infinite alternate ease-in-out;
+        }
+
+        .v1 { background-color: #FF6347; width: 3px; left: 10%; animation-delay: 0s; }
+        .v2 { background-color: #7CFC00; width: 6px; left: 25%; animation-delay: 2s; }
+        .v3 { background-color: #00CED1; width: 9px; left: 40%; animation-delay: 4s; }
+        .v4 { background-color: #FFD700; width: 12px; left: 55%; animation-delay: 6s; }
+        .v5 { background-color: #8A2BE2; width: 15px; left: 70%; animation-delay: 8s; }
+
+        .h1 { background-color: #FF6347; height: 3px; top: 10%; animation-delay: 0s; }
+        .h2 { background-color: #7CFC00; height: 6px; top: 25%; animation-delay: 2s; }
+        .h3 { background-color: #00CED1; height: 9px; top: 40%; animation-delay: 4s; }
+        .h4 { background-color: #FFD700; height: 12px; top: 55%; animation-delay: 6s; }
+        .h5 { background-color: #8A2BE2; height: 15px; top: 70%; animation-delay: 8s; }
+
+        @keyframes slideY {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(30px); }
+        }
+
+        @keyframes slideX {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(30px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="vertical-line v1"></div>
+        <div class="vertical-line v2"></div>
+        <div class="vertical-line v3"></div>
+        <div class="vertical-line v4"></div>
+        <div class="vertical-line v5"></div>
+        <div class="horizontal-line h1"></div>
+        <div class="horizontal-line h2"></div>
+        <div class="horizontal-line h3"></div>
+        <div class="horizontal-line h4"></div>
+        <div class="horizontal-line h5"></div>
+    </div>
+</body>
+</html>
+<!-- 
