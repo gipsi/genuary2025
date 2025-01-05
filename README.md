@@ -1,2 +1,2 @@
-# html-starter
-#Genuary2025 challenge
+# Genuary2025
+Generative ai art challenge
