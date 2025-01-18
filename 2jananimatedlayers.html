@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layers Upon Layers - Avant-Garde AI Art</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #222;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            position: relative;
+            width: 80%;
+            height: 80%;
+        }
+
+        .layer {
+            position: absolute;
+            border-radius: 15px;
+            opacity: 0.8;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            animation: move 10s infinite alternate ease-in-out;
+        }
+
+        .layer1 {
+            width: 90%;
+            height: 90%;
+            background-color: #FF6347;
+            top: 5%;
+            left: 5%;
+        }
+
+        .layer2 {
+            width: 80%;
+            height: 80%;
+            background-color: #7CFC00;
+            top: 10%;
+            left: 10%;
+            animation-delay: 2s;
+        }
+
+        .layer3 {
+            width: 70%;
+            height: 70%;
+            background-color: #00CED1;
+            top: 15%;
+            left: 15%;
+            animation-delay: 4s;
+        }
+
+        .layer4 {
+            width: 60%;
+            height: 60%;
+            background-color: #FFD700;
+            top: 20%;
+            left: 20%;
+            animation-delay: 6s;
+        }
+
+        .layer5 {
+            width: 50%;
+            height: 50%;
+            background-color: #8A2BE2;
+            top: 25%;
+            left: 25%;
+            animation-delay: 8s;
+        }
+
+        @keyframes move {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            100% { transform: translate(30px, 30px) rotate(10deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="layer layer1"></div>
+        <div class="layer layer2"></div>
+        <div class="layer layer3"></div>
+        <div class="layer layer4"></div>
+        <div class="layer layer5"></div>
+    </div>
+</body>
+</html>
