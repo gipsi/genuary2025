@@ -1,0 +1,51 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #2e2e2e; /* Dark mode background */
+    color: #f8f8f2; /* Light text */
+}
+
+/* Container Styling */
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffd1dc; /* Cheerful pastel pink */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+/* Links List Styling */
+.links-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links-list li {
+    margin: 10px 0;
+}
+
+/* Link Styling */
+.links-list a {
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    color: #2e2e2e; /* Dark text for contrast */
+    background-color: #b3e5fc; /* Light pastel blue background */
+    transition: all 0.3s ease;
+}
+
+.links-list a:hover {
+    color: #ffffff; /* Light text */
+    background-color: #81d4fa; /* Brighter blue */
+    transform: scale(1.1);
+}
