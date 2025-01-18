@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangles</title>
+    <style>
+        body {
+            background-color: #191970; /* Midnight blue background */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+        .triangle {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid #ff6347; /* Tomato color */
+            transform: rotate(0deg);
+        }
+        .triangle:nth-child(odd) {
+            border-bottom-color: #32cd32; /* Lime green color */
+        }
+        .triangle:nth-child(even) {
+            border-bottom-color: #ff6347; /* Tomato color */
+        }
+        .triangle.centered {
+            border-bottom-color: #1e90ff; /* Dodger blue color */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .triangle:nth-child(1) { top: 10%; left: 20%; transform: rotate(15deg); }
+        .triangle:nth-child(2) { top: 30%; left: 50%; transform: rotate(-30deg); }
+        .triangle:nth-child(3) { top: 70%; left: 80%; transform: rotate(45deg); }
+        .triangle:nth-child(4) { top: 50%; left: 10%; transform: rotate(-60deg); }
+        .triangle:nth-child(5) { top: 80%; left: 40%; transform: rotate(75deg); }
+    </style>
+</head>
+<body>
+    <div class="triangle centered"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+</body>
+</html>
